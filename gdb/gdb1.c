@@ -8,20 +8,21 @@
 // 2 <enter>
 // <CTRL>-D
 
+//da int a float
 
 #include <stdio.h>
 
 int main()
 {
-	int somma = 0;
-	int val;
-	int numeri = 0;
-	while (scanf("%d\n",&val) != EOF) {
+	float somma = 0;
+	float val;
+	float numeri = 0;
+	while (scanf("%f",&val) != EOF) {
 		somma += val;
 		numeri++;
 	}
 
-	double media;
+	float media;
 	if (numeri > 0) {
 		media = somma/numeri;
 		printf("La media è %f\n", media);

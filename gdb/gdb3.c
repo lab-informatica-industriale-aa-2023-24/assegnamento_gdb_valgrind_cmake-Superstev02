@@ -4,10 +4,12 @@
 long fattoriale(int n)
 {
 	long result = 1;
-	while (n--)
-		result*=n;
-
- 	return result;
+	while (n>0){
+		result = result*n;
+		n--;
+	}
+	return result;
+	
 }
 
 
