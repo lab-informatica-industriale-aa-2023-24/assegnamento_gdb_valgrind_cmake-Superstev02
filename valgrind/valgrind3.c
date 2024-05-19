@@ -13,10 +13,13 @@ int main()
 		*s = '\0';
 		s++;
 	}
-
-	for(int n = 0; n < 30; n++) {
+	
+	s=p;  //bisogna riazzerare il counter 
+	
+	for(int n = 0; n < 20; n++) {  //il limite è 20
 		*s = 'A';
 		s++;
 	}
-
+	
+	free(p);  //mancava deallocazione
 }
